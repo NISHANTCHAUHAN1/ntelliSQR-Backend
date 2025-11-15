@@ -1,7 +1,7 @@
 import express from "express";
-import { signup, login, forgotPassword, resetPassword } from "../controllers/authController";
-import { validate } from "../middleware/validate";
-import { signupSchema, loginSchema, forgotSchema, resetSchema } from "../schemas/authSchema";
+import { signup, login, forgotPassword, resetPassword } from "../controllers/authController.js";
+import { validate } from "../middleware/validate.js";
+import { signupSchema, loginSchema, forgotSchema, resetSchema } from "../schemas/authSchema.js";
 const router = express.Router();
 router.post("/signup", validate(signupSchema), signup);
 router.post("/login", validate(loginSchema), login);

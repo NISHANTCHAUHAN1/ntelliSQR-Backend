@@ -1,6 +1,6 @@
 import crypto from "crypto";
-import User from "../models/User";
-import { signJwt } from "../utils/generateToken";
+import User from "../models/User.js";
+import { signJwt } from "../utils/generateToken.js";
 export const signup = async (req, res, next) => {
     try {
         const { name, email, password } = req.body;

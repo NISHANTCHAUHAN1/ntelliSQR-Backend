@@ -1,4 +1,4 @@
-import Log from "../models/Log";
+import Log from "../models/Log.js";
 export async function logErrorToDb(err, route, meta) {
     try {
         const payload = {

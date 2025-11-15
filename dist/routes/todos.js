@@ -1,8 +1,8 @@
 import express from "express";
-import { requireAuth } from "../middleware/auth";
-import { createTodo, listTodos, updateTodo, deleteTodo, toggleTodo } from "../controllers/todoController";
-import { validate } from "../middleware/validate";
-import { createTodoSchema, updateTodoSchema } from "../schemas/todoSchema";
+import { requireAuth } from "../middleware/auth.js";
+import { createTodo, listTodos, updateTodo, deleteTodo, toggleTodo } from "../controllers/todoController.js";
+import { validate } from "../middleware/validate.js";
+import { createTodoSchema, updateTodoSchema } from "../schemas/todoSchema.js";
 const router = express.Router();
 router.use(requireAuth);
 router.get("/", listTodos);

@@ -1,4 +1,4 @@
-import { logErrorToDb } from "../utils/logger";
+import { logErrorToDb } from "../utils/logger.js";
 export const errorHandler = async (err, req, res, _next) => {
     try {
         console.error("Error:", err?.message || err);
