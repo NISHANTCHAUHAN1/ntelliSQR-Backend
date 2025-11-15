@@ -1,4 +1,4 @@
-import Log from "../models/Log";
+import Log from "../models/Log.js";
 
 export async function logErrorToDb(err: any, route?: string, meta?: any) {
   try {

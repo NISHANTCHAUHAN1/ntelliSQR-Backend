@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { logErrorToDb } from "../utils/logger";
+import { logErrorToDb } from "../utils/logger.js";
 
 export const errorHandler = async (
   err: any,

@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from "express";
 import crypto from "crypto";
-import User from "../models/User";
-import { signJwt } from "../utils/generateToken";
+import User from "../models/User.js";
+import { signJwt } from "../utils/generateToken.js";
 
 export const signup = async (req: Request, res: Response, next: NextFunction) => {
   try {
